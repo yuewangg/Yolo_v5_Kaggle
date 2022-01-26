@@ -1,0 +1,14 @@
+
+WARNING: --img-size 720 must be multiple of max stride 64, updating to 768
+Scanning images: 100%|████████████████████| 2820/2820 [00:02<00:00, 1069.20it/s]
+Scanning labels data/coco/labels/train2017.cache3 (1688 found, 0 missing, 0 empty, 0 duplicate, for 2820 images): 1688it [00:00, 20177.68it/s]
+Traceback (most recent call last):
+  File "train.py", line 537, in <module>
+    train(hyp, opt, device, tb_writer, wandb)
+  File "train.py", line 181, in train
+    dataloader, dataset = create_dataloader(train_path, imgsz, batch_size, gs, opt,
+  File "/media/yue/My Passport/master/yolor-main/utils/datasets.py", line 64, in create_dataloader
+    dataset = LoadImagesAndLabels(path, imgsz, batch_size,
+  File "/media/yue/My Passport/master/yolor-main/utils/datasets.py", line 451, in __init__
+    assert (l[:, 1:] <= 1).all(), 'non-normalized or out of bounds coordinate labels: %s' % file
+AssertionError: non-normalized or out of bounds coordinate labels: data/coco/labels/train2017/0-9470.txt
