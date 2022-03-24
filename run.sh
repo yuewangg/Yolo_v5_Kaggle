@@ -7,10 +7,10 @@ do
 		--img $resolution \
 		--batch 1 \
 		--epochs 13 \
-		--data /home/featurize/trainfull/dataset.yaml \
+		--data ./data/dataset.yaml \
 		--bg-ratio 0.0 \
-		--weights yolov5l6.pt \
-		--project /home/featurize/yolov5 \
+		--weights yolov5s6.pt \
+		--project ../runs/train \
 		--exist-ok \
 		--name fulltrain-r${resolution} \
 		--multi-scale \
