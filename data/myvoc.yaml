@@ -1,6 +1,6 @@
-train: /kaggle/input/VOCData/train.txt
-val: /kaggle/input/VOCData/val.txt
-test: /kaggle/input/VOCData/test.txt
+train: /kaggle/input/vocdata/train.txt
+val: /kaggle/input/vocdata/val.txt
+test: /kaggle/input/vocdata/test.txt
 
 # number of classes
 nc: 8
